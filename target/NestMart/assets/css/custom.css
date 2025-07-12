@@ -1,0 +1,119 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 12, 2025, 6:05:47 AM
+    Author     : ROG STRIX
+*/
+/*payment option*/
+.accordion-summary {
+
+    background-color: #f9f9f9;
+}
+.payment-option {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.payment-option input[type="radio"] {
+    margin-right: 5px;
+}
+.payment-option label {
+    font-size: 16px;
+    cursor: pointer;
+}
+.payment-images {
+    margin-top: 10px;
+    text-align: center;
+}
+.payment-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.price-range-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.slider-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.slider {
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress {
+    height: 5px;
+    background: #007bff;
+    border-radius: 5px;
+    position: absolute;
+    left: 25%;
+    right: 50%;
+}
+
+.range-input {
+    position: relative;
+}
+
+.range-input input[type="range"] {
+    position: absolute;
+    top: -5px;
+    height: 5px;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #007bff;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.range-input input[type="range"]::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #007bff;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.price-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+}

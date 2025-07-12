@@ -1,0 +1,121 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 5, 2025, 10:22:32 AM
+    Author     : ROG STRIX
+*/
+
+#multiImagePickerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+    padding: 0px;
+
+}
+
+/* Style for each uploaded image container */
+.uploaded-image {
+    position: relative;
+    width: 100px; /* Fixed width for each image */
+    height: 100px; /* Fixed height for each image */
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+/* Hover effect for the image container */
+.uploaded-image:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+/* Style for the image inside the container */
+.uploaded-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 6px; /* Slightly rounded corners for the image */
+}
+
+/* Style for the remove button */
+.remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4d4d; /* Red background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the remove button */
+.remove-btn:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .uploaded-image {
+        width: 80px; /* Smaller width for mobile */
+        height: 80px; /* Smaller height for mobile */
+    }
+
+    .remove-btn {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .uploaded-image {
+        width: 60px; /* Even smaller width for very small screens */
+        height: 60px; /* Even smaller height for very small screens */
+    }
+
+    .remove-btn {
+        width: 18px;
+        height: 18px;
+        font-size: 9px;
+    }
+}
+
+.upload-file-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F3BB3;
+    color: white;
+    border-radius: 0px; /* Rounded corners */
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for the upload file button */
+.upload-file-btn:hover {
+    background-color: #0B2386;  /* Darker blue on hover */
+    /* Solid border on hover */
+}
+
+/* Icon inside the button (optional) */
+.upload-file-btn::before {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
